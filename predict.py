@@ -82,22 +82,22 @@ def predict(X):
   
   return predictions
 
-mndata = MNIST("samples")
-X, y = mndata.load_testing()
+# mndata = MNIST("samples")
+# X, y = mndata.load_testing()
 
-successes = 0
+# successes = 0
 
-for i in range(len(X)):
-  # print("Test input: {}".format([test]))
-  # print(mndata.display(X[i]))
-  prediction = predict([X[i]])[0]
-  if prediction == y[i]:
-    successes += 1
+# for i in range(len(X)):
+#   print("Test input: {}".format([test]))
+#   print(mndata.display(X[i]))
+#   prediction = predict([X[i]])[0]
+#   if prediction == y[i]:
+#     successes += 1
 
-  if i % 100 == 0:
-    print("Prediction: {}".format(prediction))
-    print("Actual: {}".format(y[i]))
-    print("Accuracy: {}".format(successes / (i + 1)))
-    print("Successes: {}".format(successes))
-    print("Total: {}".format(i + 1))
+#   if i % 100 == 0:
+#     print("Prediction: {}".format(prediction))
+#     print("Actual: {}".format(y[i]))
+#     print("Accuracy: {}".format(successes / (i + 1)))
+#     print("Successes: {}".format(successes))
+#     print("Total: {}".format(i + 1))
 
