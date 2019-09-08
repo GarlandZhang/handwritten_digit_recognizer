@@ -98,4 +98,6 @@ for i in range(len(X)):
     print("Prediction: {}".format(prediction))
     print("Actual: {}".format(y[i]))
     print("Accuracy: {}".format(successes / (i + 1)))
+    print("Successes: {}".format(successes))
+    print("Total: {}".format(i + 1))
 
